@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .color{
+        @apply grayscale-0
+    }
+
+    .log-in{
+
+    }
+
+    .flex-center{
+       @apply flex flex-row items-center justify-center
+    }
+
+    .scroll-bar::-webkit-scrollbar{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .scroll-bar::-webkit-scrollbar-thumb{
+        border-radius: .5rem;
+        background-color: #0004;
+        visibility: hidden;
+    }
+
+    .scroll-bar:hover::-webkit-scrollbar-thumb{
+        visibility: visible;
+    }
+
+    .btn {
+        @apply flex items-center justify-center py-2 px-4
+        font-semibold shadow-md rounded-lg cursor-pointer
+        transition-all
+    }
+
+    .btn .btn-light {
+        @apply text-gray-500 bg-white
+    }
+
+    .btn.btn-danger {
+        @apply text-white bg-red-600 shadow-red-400/40
+    }
+
+    .btn.btn-create {
+        @apply text-white bg-[#00A46D]
+    }
+
+    .btn.btn-create:hover {
+        @apply text-white bg-[#48BE96]
+    }
+
+    .shadow-1{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .shadow-2{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+    }
+
+    .mark{
+
+    }
+
+    .mark:last-child{
+        color: #777c81;
+    }
+
+    .newUser-label{
+        @apply bg-[#E5E8EB] text-[#7E8C97]
+    }
+
+    .admin-label{
+        @apply bg-[#DBF6E5] text-[#4FAD82]
+    }
+
+    .reception-label{
+        @apply bg-[#FFE4DE] text-[#CB5650]
+    }
+
+    .shimmering-button{
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        /*background-color: hotpink;*/
+        transition-duration: 1000ms;
+        transition-property: background-position;
+    }
+
+    .shimmering-button-anime{
+        /*background-color: hotpink;*/
+        background-image: linear-gradient(-60deg, transparent 0%, transparent 40%, #ffffff44 40%, #ffffff44 60%, transparent 60%, transparent 100%);
+        background-size: 200% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .shimmering-button-anime{
+        background-position-x: 150%;
+    }
+
+    .shimmering-button-anime:hover{
+        background-position-x: -150%;
+    }
+
+    /*.height{*/
+    /*    !*height: 10%;*!*/
+    /*    !*max-height: calc(100% - 175px);*!*/
+    /*    max-height: 250px;*/
+    /*    !*overflow: auto;*!*/
+    /*    background-color: #CB5650;*/
+    /*}*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* No More Tailwind CSS V1.0.1 Jan 2023 */
+.no-more-tailwind a:link {
+    color: blue;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+.no-more-tailwind a:visited {
+    color: purple;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+.no-more-tailwind a:link:active {
+    color: dodgerblue;
+}
+
+.no-more-tailwind a:visited:active {
+    color: rebeccapurple;
+}
+
+.no-more-tailwind address {
+    display: block;
+    font-style: italic;
+}
+
+.no-more-tailwind area {
+    display: none;
+}
+
+.no-more-tailwind article {
+    display: block;
+}
+
+.no-more-tailwind aside {
+    display: block;
+}
+
+.no-more-tailwind audio {
+    display: block;
+}
+
+.no-more-tailwind b {
+    font-weight: bold;
+}
+
+.no-more-tailwind bdo {
+    unicode-bidi: bidi-override;
+}
+
+.no-more-tailwind blockquote {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.no-more-tailwind body {
+    display: block;
+    margin: 0px;
+}
+
+.no-more-tailwind body:focus {
+    outline: none;
+}
+
+.no-more-tailwind caption {
+    display: table-caption;
+    text-align: center;
+}
+
+.no-more-tailwind cite {
+    font-style: italic;
+}
+
+.no-more-tailwind code {
+    font-family: monospace;
+}
+
+.no-more-tailwind col {
+    display: table-column;
+}
+
+.no-more-tailwind colgroup {
+    display: table-column-group
+}
+
+.no-more-tailwind datalist {
+    display: none;
+}
+
+.no-more-tailwind dd {
+    display: block;
+    margin-left: 40px;
+}
+
+.no-more-tailwind del {
+    text-decoration: line-through;
+}
+
+.no-more-tailwind details {
+    display: block;
+}
+
+.no-more-tailwind details {
+    display: block;
+}
+
+.no-more-tailwind dfn {
+    font-style: italic;
+}
+
+.no-more-tailwind div {
+    display: block;
+}
+
+.no-more-tailwind dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-more-tailwind dt {
+    display: block;
+}
+
+.no-more-tailwind em {
+    font-style: italic;
+}
+
+.no-more-tailwind embed:focus {
+    outline: none;
+}
+
+.no-more-tailwind fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove dimgray;
+}
+
+.no-more-tailwind figcaption {
+    display: block;
+}
+
+.no-more-tailwind figure {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.no-more-tailwind footer {
+    display: block;
+}
+
+.no-more-tailwind form {
+    display: block;
+    margin-top: 0em;
+}
+
+.no-more-tailwind h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.no-more-tailwind h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.no-more-tailwind h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.no-more-tailwind h4 {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.no-more-tailwind h5 {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.no-more-tailwind h6 {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.no-more-tailwind head {
+    display: none;
+}
+
+.no-more-tailwind header {
+    display: block;
+}
+
+.no-more-tailwind hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.no-more-tailwind html {
+    display: block;
+}
+
+.no-more-tailwind html:focus {
+    outline: none;
+}
+
+.no-more-tailwind i {
+    font-style: italic;
+}
+
+.no-more-tailwind iframe:focus {
+    outline: none;
+}
+
+.no-more-tailwind iframe[seamless] {
+    display: block;
+}
+
+.no-more-tailwind img {
+    display: inline-block;
+}
+
+.no-more-tailwind ins {
+    text-decoration: underline;
+}
+
+.no-more-tailwind kbd {
+    font-family: monospace;
+}
+
+.no-more-tailwind label {
+    cursor: default;
+}
+
+.no-more-tailwind legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+.no-more-tailwind li {
+    display: list-item;
+}
+
+.no-more-tailwind link {
+    display: none;
+}
+
+.no-more-tailwind map {
+    display: inline;
+}
+
+.no-more-tailwind mark {
+    background-color: yellow;
+    color: black;
+}
+
+.no-more-tailwind menu {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.no-more-tailwind nav {
+    display: block;
+}
+
+.no-more-tailwind object:focus {
+    outline: none;
+}
+
+.no-more-tailwind ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.no-more-tailwind output {
+    display: inline;
+}
+
+.no-more-tailwind p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-more-tailwind param {
+    display: none;
+}
+
+.no-more-tailwind pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}
+
+.no-more-tailwind q {
+    display: inline;
+}
+
+.no-more-tailwind q::before {
+    content: open-quote;
+}
+
+.no-more-tailwind q::after {
+    content: close-quote;
+}
+
+.no-more-tailwind rt {
+    line-height: normal;
+}
+
+.no-more-tailwind s {
+    text-decoration: line-through;
+}
+
+.no-more-tailwind samp {
+    font-family: monospace;
+}
+
+.no-more-tailwind script {
+    display: none;
+}
+
+.no-more-tailwind section {
+    display: block;
+}
+
+.no-more-tailwind small {
+    font-size: smaller;
+}
+
+.no-more-tailwind strike {
+    text-decoration: line-through;
+}
+
+.no-more-tailwind strong {
+    font-weight: bold;
+}
+
+.no-more-tailwind style {
+    display: none;
+}
+
+.no-more-tailwind sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+.no-more-tailwind summary {
+    display: block;
+}
+
+.no-more-tailwind sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.no-more-tailwind table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.no-more-tailwind tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.no-more-tailwind td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.no-more-tailwind tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.no-more-tailwind th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+.no-more-tailwind thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.no-more-tailwind title {
+    display: none;
+}
+
+.no-more-tailwind tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.no-more-tailwind u {
+    text-decoration: underline;
+}
+
+.no-more-tailwind ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.no-more-tailwind var {
+    font-style: italic;
+}
